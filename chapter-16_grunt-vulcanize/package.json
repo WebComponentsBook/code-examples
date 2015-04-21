@@ -1,0 +1,14 @@
+{
+  "name": "x-dialog",
+  "version": "0.0.0",
+  "description": "dialog box web component",
+  "main": "x-dialog.html",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-uglify": "~0.5.1"
+  }
+}

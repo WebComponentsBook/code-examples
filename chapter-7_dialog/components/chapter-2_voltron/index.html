@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Voltron Example</title>
+        <style type="text/css">
+            .component {
+                width: 400px;
+                height: 200px;
+                background: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="component">
+            <p><a href="#" data-action="unbind">unbind</a></p>
+            <p><a href="#" data-action="destroy">destroy</a></p>
+        </div>
+        <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="voltron.js"></script>
+        <script type="text/javascript">
+            (function () {
+                var component = new Voltron({
+                    $el: '.component',
+                    events: {
+                        'click [data-action]': function (e) {
+                            var action = $(e.currentTarget).attr('data-action');
+                            e.preventDefault();
+                            this[action]();
+                        }
+                    }
+                });
+            })();
+        </script>
+    </body>
+</html>

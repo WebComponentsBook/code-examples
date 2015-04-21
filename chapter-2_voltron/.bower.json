@@ -1,0 +1,37 @@
+{
+  "name": "voltron",
+  "version": "0.0.0",
+  "authors": [
+    "Jason Strimpel <jstrimpel@gmail.com>"
+  ],
+  "description": "component base class",
+  "main": "./voltron.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dialog"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/WebComponentsBook/chapter-2_base_component",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "_release": "0.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.0",
+    "commit": "6d69300a75d07634af8468a06e33caba4f1910a4"
+  },
+  "_source": "git://github.com/WebComponentsBook/chapter-2_voltron.git",
+  "_target": "0.0.0",
+  "_originalSource": "chapter-2_voltron"
+}

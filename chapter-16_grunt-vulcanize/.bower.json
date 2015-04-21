@@ -1,0 +1,39 @@
+{
+  "name": "chapter-16_grunt-vulcanize",
+  "authors": [
+    "Jarrod Overson <jsoverson@gmail.com>",
+    "Jason Strimpel <jstrimpel@gmail.com>"
+  ],
+  "description": "a dialog box web component",
+  "main": "./x-dialog.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dialog"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/YOURUSER/x-dialog.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.3.3",
+    "jquery": "~2.1.1",
+    "jenga": "*"
+  },
+  "_release": "41d637217a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "41d637217a1ba7d6ae2dc39d62cb3f89bcf4160b"
+  },
+  "_source": "git://github.com/WebComponentsBook/chapter-16_grunt-vulcanize.git",
+  "_target": "*",
+  "_originalSource": "chapter-16_grunt-vulcanize"
+}

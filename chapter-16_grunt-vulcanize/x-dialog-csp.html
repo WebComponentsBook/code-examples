@@ -1,0 +1,62 @@
+<!-- Import Polymer -->
+<link rel="import" href="components/polymer/polymer.html">
+
+<script src="components/jquery/dist/jquery.js"></script>
+<script src="components/jenga/dist/jenga.js"></script>
+
+
+
+
+
+
+
+<!-- Define your custom element -->
+<polymer-element name="x-dialog" attributes="title draggable resizable" assetpath="components/src/">
+    <template>
+        <style>[role="dialog"] {
+    display: none;
+}
+
+[role="dialog"] {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-family: "Trebuchet MS", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
+[role="dialog"] h2 {
+    background: #bbb;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+[role="dialog"] p {
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+[role="dialog"] .apache-chief-resize {
+    background: url(components/src/jquery-ui-icons.png) -64px -224px !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+</style>
+        <div id="dialog" role="dialog">
+            <h2 id="title">{{title}}</h2>
+
+            <p id="content"><content></content></p>
+        </div>
+    </template>
+    
+
+</polymer-element>
+<script src="x-dialog-csp.js"></script>

@@ -1,0 +1,41 @@
+<!-- Import Polymer -->
+<link rel="import" href="../polymer/polymer.html">
+
+<script src="../jquery/dist/jquery.js"></script>
+<script src="../jenga/dist/jenga.js"></script>
+
+<script src="Duvet.js"></script>
+<script src="Shamen.js"></script>
+<script src="ApacheChief.js"></script>
+<script src="BaseComponent.js"></script>
+<script src="DialogComponent.js"></script>
+
+<!-- Define your custom element -->
+<polymer-element name="x-dialog" attributes="title draggable resizable" constructor="XDialog">
+    <template>
+        <link rel="stylesheet" href="DialogComponent.css">
+        <div id="dialog" role="dialog">
+            <h2 id="title">{{title}}</h2>
+
+            <p id="content"><content></content></p>
+        </div>
+    </template>
+    <script>
+        Polymer('x-dialog', {
+            attached: function() {
+                this.dialog = new Dialog({
+                    $el: this.$.dialog,
+                    draggable: this.attributes.hasOwnProperty('draggable'),
+                    resizable: this.attributes.hasOwnProperty('resizable'),
+                    alignToEl: window,
+                    align: 'M',
+                    hostQrySelector: this
+                });
+            },
+            show: function() {
+                this.dialog.show();
+            }
+        });
+    </script>
+
+</polymer-element>

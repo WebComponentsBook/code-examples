@@ -1,0 +1,38 @@
+{
+  "name": "chapter-6_duvet",
+  "authors": [
+    "Jason Strimpel <jstrimpel@gmail.com>"
+  ],
+  "description": "overlay widget",
+  "main": "./voltron.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dialog",
+    "overlay"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/WebComponentsBook/chapter-6_duvet",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "jenga": "*"
+  },
+  "_release": "cc2fc338cc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "cc2fc338ccf84d25986e461df8e910cd8e9896be"
+  },
+  "_source": "git://github.com/WebComponentsBook/chapter-6_duvet.git",
+  "_target": "*",
+  "_originalSource": "chapter-6_duvet"
+}

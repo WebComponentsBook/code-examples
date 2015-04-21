@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="dialog.css">
+        <meta charset="utf-8">
+        <title>Dialog Component Example</title>
+        <style type="text/css">
+            .component {
+                width: 400px;
+                height: 200px;
+                background: #ccc;
+                display: none;
+            }
+
+            #title {
+                height: 20px;
+                background: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div role="dialog" aria-labelledby="title" aria-describedby="content">
+            <h2 id="title">I am a title</h2>
+            <p id="content">Look at me! I am content.</p>
+        </div>
+        <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="components/chapter-2_voltron/voltron.js"></script>
+        <script type="text/javascript" src="components/jenga/dist/jenga.js"></script>
+        <script type="text/javascript" src="components/chapter-6_duvet/duvet.js"></script>
+        <script type="text/javascript" src="components/chapter-7_shamen/shamen.js"></script>
+        <script type="text/javascript" src="components/chapter-8_apache-chief/apacheChief.js"></script>
+        <script type="text/javascript" src="dialog.js"></script>
+        <script type="text/javascript">
+            (function () {
+                var dialog = new Dialog({
+                    $el: '[role="dialog"]',
+                    draggable: true,
+                    resizable: true,
+                    events: {
+                        'click [data-action]': function (e) {
+                            var action = $(e.currentTarget).attr('data-action');
+                            e.preventDefault();
+                            this[action]();
+                        }
+                    }
+                });
+
+                dialog.show();
+            })();
+        </script>
+    </body>
+</html>

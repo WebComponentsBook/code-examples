@@ -1,0 +1,40 @@
+{
+  "name": "chapter-8_dialog",
+  "authors": [
+    "Jason Strimpel <jstrimpel@gmail.com>"
+  ],
+  "description": "dialog component resizable",
+  "main": "./dialog.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dialog"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/WebComponentsBook/chapter-8_dialog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "chapter-2_voltron": "*",
+    "chapter-6_duvet": "*",
+    "chapter-7_shamen": "*",
+    "chapter-8_apache-chief": "*"
+  },
+  "_release": "381c288493",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "381c288493bda5aefc46fa0755c1bf63efa82665"
+  },
+  "_source": "git://github.com/WebComponentsBook/chapter-8_dialog.git",
+  "_target": "*",
+  "_originalSource": "chapter-8_dialog"
+}

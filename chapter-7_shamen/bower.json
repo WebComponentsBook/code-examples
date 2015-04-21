@@ -1,0 +1,29 @@
+{
+  "name": "chapter-7_shamen",
+  "version": "0.0.0",
+  "authors": [
+    "Jason Strimpel <jstrimpel@gmail.com>"
+  ],
+  "description": "draggable widget",
+  "main": "./shamen.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dialog",
+    "draggable"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/WebComponentsBook/chapter-7_shamen",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}

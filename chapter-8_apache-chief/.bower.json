@@ -1,0 +1,37 @@
+{
+  "name": "chapter-8_apache-chief",
+  "authors": [
+    "Jason Strimpel <jstrimpel@gmail.com>"
+  ],
+  "description": "resizable widget",
+  "main": "./apacheChief.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dialog",
+    "resizable"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/WebComponentsBook/chapter-8_apache-chief",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "_release": "57872a91ef",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "57872a91ef8723bc6bf393f77063e8f82fbcae37"
+  },
+  "_source": "git://github.com/WebComponentsBook/chapter-8_apache-chief.git",
+  "_target": "*",
+  "_originalSource": "chapter-8_apache-chief"
+}

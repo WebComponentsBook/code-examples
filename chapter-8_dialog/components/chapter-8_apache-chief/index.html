@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dialog Component Example</title>
+        <style type="text/css">
+            .component {
+                width: 400px;
+                height: 200px;
+                background: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="component"></div>
+        <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="apacheChief.js"></script>
+        <script type="text/javascript">
+            (function () {
+                var resizable = new ApacheChief($('.component')[0], {
+                    handles: ['BL', 'BR', 'MR', 'ML', 'TM', 'TL', 'TR', 'BM']
+                });
+            })();
+        </script>
+    </body>
+</html>

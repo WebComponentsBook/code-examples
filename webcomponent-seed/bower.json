@@ -1,0 +1,27 @@
+{
+  "name": "webcomponent-seed",
+  "version": "0.0.1",
+  "authors": [
+    "Jarrod Overson <jsoverson@gmail.com>"
+  ],
+  "description": "web component seed",
+  "main": "./component.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/webcomponentsbook/webcomponent-seed/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.3.3"
+  }
+}

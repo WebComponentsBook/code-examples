@@ -1,0 +1,30 @@
+{
+  "name": "chapter-14_x-dialog",
+  "version": "0.0.0",
+  "authors": [
+    "Jarrod Overson <jsoverson@gmail.com>"
+  ],
+  "description": "a dialog box web component",
+  "main": "./x-dialog.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dialog"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/YOURUSER/x-dialog.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.3.3",
+    "jquery": "~2.1.1",
+    "jenga": "*"
+  }
+}

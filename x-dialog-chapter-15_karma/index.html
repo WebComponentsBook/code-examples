@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;x-dialog&gt;</title>
+
+    <script src="components/platform/platform.js"></script>
+
+    <link rel="import" href="components/src/x-dialog.html">
+</head>
+<body>
+
+<x-dialog draggable resizable title="This is my title!">
+    This is my content
+</x-dialog>
+
+<script>
+    window.addEventListener('polymer-ready',function(){
+        var dialog = document.querySelector('x-dialog');
+        dialog.show();
+    })
+</script>
+
+</body>
+</html>

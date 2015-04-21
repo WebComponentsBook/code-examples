@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dialog Component Example</title>
+        <style type="text/css">
+            .marker {
+                width: 800px;
+                height: 200px;
+                background: #000;
+            }
+
+            .component, .align {
+                width: 400px;
+                height: 200px;
+                background: #ccc;
+            }
+
+            .align {
+                background: #ff0000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="marker"></div>
+        <div class="align"></div>
+        <div class="component"></div>
+        <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="components/jenga/dist/jenga.js"></script>
+        <script type="text/javascript" src="duvet.js"></script>
+        <script type="text/javascript">
+            (function () {
+                var overlay = new Duvet($('.component')[0]);
+                overlay.position();
+
+                var overlay2 = new Duvet($('.align')[0], {
+                    alignToEl: $('.marker')[0],
+                    align: 'BR'
+                });
+                overlay2.position();
+            })();
+        </script>
+    </body>
+</html>

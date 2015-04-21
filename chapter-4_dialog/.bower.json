@@ -1,0 +1,38 @@
+{
+  "name": "chapter-4_dialog",
+  "authors": [
+    "Jason Strimpel <jstrimpel@gmail.com>"
+  ],
+  "description": "dialog component z-index",
+  "main": "./dialog.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dialog"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/WebComponentsBook/chapter-4_dialog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "chapter-2_voltron": "*",
+    "jenga": "*"
+  },
+  "_release": "fd6762d031",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fd6762d03162c07783efd3374aa785142ac47a7f"
+  },
+  "_source": "git://github.com/WebComponentsBook/chapter-4_dialog.git",
+  "_target": "*",
+  "_originalSource": "chapter-4_dialog"
+}

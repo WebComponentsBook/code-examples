@@ -1,0 +1,27 @@
+<!-- Import Polymer -->
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- Define your custom element -->
+<polymer-element name="webcomponent-seed" attributes="">
+  <template>
+  </template>
+  <script>
+    Polymer('web-component', {
+      created: function () {
+      },
+      ready: function () {
+      },
+      attached: function () {
+      },
+      domReady: function () {
+      },
+      detached: function () {
+      },
+      attributeChanged: function (attrName, oldVal, newVal) {
+        //var newVal = this.getAttribute(attrName);
+        console.log(attrName, 'old: ' + oldVal, 'new:', newVal);
+      },
+    });
+  </script>
+
+</polymer-element>
